@@ -4,7 +4,10 @@ def count_letters(a):
 
     for char in a:
         if char.isalpha():
-            count_chars[char] = a.count(char)
+            if char in count_chars:
+                count_chars[char] += 1
+            else:
+                count_chars[char] = 1
     return count_chars
 
 
