@@ -16,15 +16,15 @@ class Button:
         self.colour = colour
         self.assign = assign
 
-    def enable_button(self):
+    def enable_button(self) -> None:
         """
         Включение кнопки
         """
-    def turn_off_button(self):
+    def turn_off_button(self) -> None:
         """
         Выключение кнопки
         """
-    def reassign_button(self, assign):
+    def reassign_button(self, assign) -> str:
         """
         Переназначение кнопки
         """
@@ -45,11 +45,11 @@ class Book:
         self.title = title
         self.subject = subject
 
-    def take_a_book(self):
+    def take_a_book(self) -> None:
         """
         Взять книгу
         """
-    def put_the_book_away(self):
+    def put_the_book_away(self) -> None:
         """
         Отдать книгу
         """
@@ -70,11 +70,11 @@ class Product:
         self.price = price
         self.title = title
 
-    def buy_a_product(self):
+    def buy_a_product(self) -> None:
         """
         Купить товар
         """
-    def return_product(self):
+    def return_product(self) -> None:
         """
         Вернуть товар
         """
@@ -82,3 +82,4 @@ class Product:
 
 if __name__ == "__main__":
     doctest.testmod()
+    
