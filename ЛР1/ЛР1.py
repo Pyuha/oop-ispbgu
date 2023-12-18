@@ -8,6 +8,10 @@ class Button:
 
         :param colour: Цвет кнопки
         :param assign: Назначение кнопки
+
+        Примеры:
+        >>> button1 = Button('Зеленая', 'Включение')
+        >>> button2 = Button('Красная', 'Выключение')
         """
         self.colour = colour
         self.assign = assign
@@ -33,6 +37,10 @@ class Book:
 
         :param title: Название книги
         :param subject: Предмет книги
+
+        Примеры:
+        >>> book1 = Book('Роме и Джульетта', 'Пьеса')
+        >>> book2 = Book('Алгебра простым языком', 'Учебник')
         """
         self.title = title
         self.subject = subject
@@ -48,12 +56,16 @@ class Book:
 
 
 class Product:
-    def __init__(self, price: bool, title: str):
+    def __init__(self, price: float, title: str):
         """
         Создание объекта "Товар"
 
         :param price: Цена товара
         :param title: Название товара
+
+        Примеры:
+        >>> product1 = Product(250.5, 'Колбаса')
+        >>> product2 = Product(40.2, 'Минеральная вода')
         """
         self.price = price
         self.title = title
